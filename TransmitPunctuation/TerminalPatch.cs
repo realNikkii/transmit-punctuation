@@ -9,7 +9,7 @@ public class TerminalPatch
     [HarmonyPrefix]
     private static bool RemovePunctuation(object[] __args, ref string __result)
     {
-        __result = __args[0].ToString();
+        __result = __args[0].ToString().ToLower();
         return false;
     }
 }
